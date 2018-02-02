@@ -1,5 +1,6 @@
-from __future__ import print_function
+#This filter blocks out low frequencies. Try changing values for f on line 16 to see effects
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import *
 import numpy as np
 
 def lag(V_input,T,V_previous_output):  #lag function
@@ -12,7 +13,7 @@ def lead(V_input,T,V_previous_output):
 #-------------tuning------------------------------------------
 Time_domain_max = 250   #controls the length of X axis
 T = 10 #Time constant
-f = 10  #Frequency
+f = 1  #Frequency
 #----------Declaring array-------------------------------------
 t = np.arange(0,Time_domain_max, 1)
 y_V_input = 100 * (np.sin((np.pi*f*t)/100))
@@ -42,7 +43,7 @@ plt.setp(l2, linestyle='--', linewidth=1, color='b')
 plt.setp(l1,linewidth=2, color='g')
 
 ojo = plt.title('LEAD filter (HPF) by Temuujin')
-
+legend([l1, l2], ["Voltage input", "Voltage Output"])
 plt.grid(True)
 plt.show()
 

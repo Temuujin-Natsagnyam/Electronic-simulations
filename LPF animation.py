@@ -13,7 +13,6 @@ def lag(V_input,T,V_previous_output):  #lag function
     return V_new_output
 
 #-------------tuning------------------------------------------
-global T
 T = 25
 my_interval = 25  #is the rate of animation msec
 my_Zoomin = 15 #For zooming in on lower Hz

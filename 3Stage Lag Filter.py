@@ -1,4 +1,4 @@
-from __future__ import print_function
+#This shows the effect of multiple lag filter connected. It steepens the cut-off frequency slope (in a bode plot)
 import matplotlib.pyplot as plt
 import numpy as np
 def lag(V_input,T,V_previous_output):  #lag function

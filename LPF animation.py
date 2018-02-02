@@ -1,3 +1,5 @@
+# This animation shows the frequency of the graph increasing and decreasing. You can see that the Low pass filter lowers voltage output
+# when the frequency increase, and increase when the frequency lowers.
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation

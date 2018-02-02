@@ -1,3 +1,4 @@
+#You can see that the High pass filters blocks voltage when frequency is low.
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -13,7 +14,6 @@ def init():
     return line, line2
 
 #-----------tuning-----------------------
-global T
 T = 20
 my_interval = 25  #is the rate of animation msec
 my_Zoomin = 15 #For zooming in on lower Hz

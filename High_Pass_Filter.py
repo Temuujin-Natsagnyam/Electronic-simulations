@@ -1,4 +1,4 @@
-#This filter blocks out low frequencies. Try changing values for f on line 16 to see effects
+#This filter blocks out low frequencies. Try changing values for f on line 16 to see effects.
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import *
 import numpy as np

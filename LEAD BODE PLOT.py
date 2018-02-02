@@ -1,3 +1,5 @@
+#These are the bode plots of LPF and HPF. There is frequency on the x-axis and Voltage output on the y-axis.
+# The orange one is for Low-Pass filter. 
 import matplotlib.pyplot as plt
 import numpy as np
 fig, ax = plt.subplots()
@@ -33,9 +35,3 @@ ax.semilogx(f,y_AC_out,f,y_phase_shift)
 ax.grid(True)
 
 plt.show()
-
-
-
-
-
-

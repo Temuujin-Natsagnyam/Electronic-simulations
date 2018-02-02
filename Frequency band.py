@@ -1,3 +1,7 @@
+#A HPF and a LPF can be used together to make a frequency selector. By cutting off frequencies below the target 
+# and higher than the target, you can tune into specific frequencies, like in radios.
+# This shows a LPF and a HPF connected and you can see how it opens for a specific frequency and closes when the frequency
+# goes higher or lower
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -14,8 +18,6 @@ def lead(V_input,T,V_previous_output):
     return V_new_output
 
 #-----------tuning-----------------------
-global T_LAG
-global T_LEAD
 T_LAG = 10
 T_LEAD = 22
 my_interval = 25  #is the rate of animation msec
@@ -67,10 +69,3 @@ ani = animation.FuncAnimation(fig, animate, np.arange(my_animation_start, my_ani
 ojo = plt.title('Frequency band demonstration by Temuujin')
 plt.grid(True)
 plt.show()
-
-
-
-
-
-
-
